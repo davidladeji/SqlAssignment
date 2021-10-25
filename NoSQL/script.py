@@ -1,8 +1,8 @@
 import boto3
 
 s3 = boto3.resource('s3',
- aws_access_key_id='AKIAZQH5ER33MBZJYRFM',
- aws_secret_access_key='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'
+ aws_access_key_id='',
+ aws_secret_access_key=''
 )
 
 try:
@@ -23,8 +23,8 @@ s3.Object('data-bucket-bylads2', 'test').Acl().put(ACL='public-read')
 
 dyndb = boto3.resource('dynamodb',
 	region_name='us-west-2',
-	aws_access_key_id='AKIAZQH5ER33MBZJYRFM',
-	aws_secret_access_key='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'
+	aws_access_key_id='',
+	aws_secret_access_key=''
 )
 
 try:
